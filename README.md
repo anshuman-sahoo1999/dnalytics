@@ -14,9 +14,9 @@
 - ✅ **Graphical Visualizations** – Interactive charts to visualize data.
 
 ## 🛠️ Tech Stack
-- **Frontend:** HTML, JavaScript, Tailwind CSS
+- **Frontend:** HTML, JavaScript, CSS
 - **Charts & Visualizations:** Chart.js
-- **Backend (Future Enhancements):** Python, Flask/Django for advanced computations
+
 
 ## 📌 Usage Instructions
 1. Clone the repository:
