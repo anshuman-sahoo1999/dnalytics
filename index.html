@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Sequence Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">DNA Analyzer</div>
+
+        <!-- Mobile Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>DNA Sequence Analyzer</h1>
+        
+        <!-- Input DNA Sequence -->
+        <textarea id="dnaInput" placeholder="Enter DNA Sequence (A, T, C, G)"></textarea>
+        
+        <!-- Controls -->
+        <button onclick="analyzeDNA()">Analyze DNA</button>
+        <button onclick="generateRandomDNA()">Generate Random DNA</button>
+        <button onclick="exportReport()">Export Report (PDF)</button>
+
+        <!-- Results Section -->
+        <div id="results">
+            <h2>Analysis Results</h2>
+            <p><strong>GC Content:</strong> <span id="gcContent"></span>%</p>
+            <p><strong>Complementary Strand:</strong> <span id="complementaryStrand"></span></p>
+            <p><strong>mRNA Sequence:</strong> <span id="mRNA"></span></p>
+            <p><strong>Protein Translation:</strong> <span id="proteinTranslation"></span></p>
+            <p><strong>Mutations Detected:</strong> <span id="mutations"></span></p>
+            <p><strong>Open Reading Frames (ORFs):</strong> <span id="orfs"></span></p>
+        </div>
+
+        <!-- DNA Visualization -->
+        <canvas id="dnaCanvas"></canvas>
+    </div>
+
+    <script src="utils.js"></script>
+    <script src="visualizer.js"></script>
+    <script src="report.js"></script>
+    <script src="script.js"></script>
+    <a href='http://www.freevisitorcounters.com'>Total Visitor Counter</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=ea8d90dcdbc2869ae44263dfa957d0ac1e5ebedb'></script>
+    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1299188/t/5"></script>
+    <!-- Footer -->
+    <footer>
+        <p>Designed and Developed by <strong>Anshuman Sahoo</strong></p>
+    </footer>
+</body>
+</html>
